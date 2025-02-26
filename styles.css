@@ -10,7 +10,7 @@ aside{
 figure img{
     border: solid 4px #d9043d;
     max-width: 100%;
-    max-height: auto;
+    height: auto;
 }
 
 body{
@@ -34,20 +34,20 @@ footer{
     .header-container{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         padding: 1rem 0;
         width: 100%;
         margin: 0;
     }
+    
 
     figure img{
         display: flex;
         align-items: center;
         justify-content: center;
         max-width: 100%;
-        max-height: auto;
+        height: auto;
         margin: 0 auto;
     }
 
@@ -66,7 +66,7 @@ footer{
 
 /* The above media query suffices for mobile devices and small tablets up to 768px */
 
-@media screen and (max-width:1000px) {
+@media screen and (min-width:768px) and (max-width:1000px) {
     body{
         display: flex;
         flex-direction: column;
@@ -117,3 +117,60 @@ footer{
 }
 
 /* The above media query suffices for larger tablets and smaller laptops up to 1000px */
+
+@media screen and (min-width:1000px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #container{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    h1{
+        padding-left: 1rem;
+    }
+
+    figure img{
+        display: flex;
+        width: 275px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.25rem;
+    }
+
+    figure{
+        display: flex;
+        flex-direction: row;
+        margin: 1.5rem 3rem 0.75rem 3rem;
+        justify-content: center;
+    }
+
+    aside{
+        padding: 1rem 0.75rem;
+        margin-bottom: 1rem;
+        max-width: 25%;
+    }
+
+    footer{
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* The above media query suffices for laptops and larger desktops more than 1000px */
