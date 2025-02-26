@@ -1,0 +1,65 @@
+header{
+    background-color: #120323;
+    color: #97bf04;
+}
+
+aside{
+    background-color: #97bf04;
+}
+
+figure img{
+    border: solid 4px #d9043d;
+    max-width: 100%;
+    max-height: auto;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+footer{
+    background-color: #d9043d;
+}
+
+/* All the above declarations will remian consistent no matter the screen size */
+
+@media screen and (max-width:768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    figure img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        max-height: auto;
+        margin: 0 auto;
+    }
+
+    aside{
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    footer{
+        padding: 1.5rem;
+        margin-bottom: 0rem;
+        color: white;
+        display: flex;
+        text-align: center;
+    }
+}
